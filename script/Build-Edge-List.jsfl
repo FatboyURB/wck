@@ -25,35 +25,35 @@
  **/
  
 /**
-This script is meant to be used with the WCK library. It generates the ActionScript 3
-code required to build an edge list from a shape on stage.
-
-Instructions:
-	-Place this JSFL file in your Flash Pro configuration directory.
-	-Select a shape on stage that does not have any curved edges.
-	-Select Commands > Build-Edge-List
-	-Copy the output into the definition of your BodyShape (either on frame code or in the class file).
-*/
+ * This script is meant to be used with the WCK library. It generates the ActionScript 3
+ * code required to build an edge list from a shape on stage.
+ * 
+ * Instructions:
+ * 	-Place this JSFL file in your Flash Pro configuration directory.
+ * 	-Select a shape on stage that does not have any curved edges.
+ * 	-Select Commands > Build-Edge-List
+ * 	-Copy the output into the definition of your BodyShape (either on frame code or in the class file).
+ */
 
 /**
-Traces a message to the Flash output panel.
-*/
+ * Traces a message to the Flash output panel.
+ */
 function trace(msg)
 {
 	fl.trace(msg);
 }
 
 /**
-Traces an error message for this script.
-*/
+ * Traces an error message for this script.
+ */
 function traceError(msg)
 {
 	trace("Build-Edge-List >> " + msg);
 }
 
 /**
-Traces the code to create a new V2 edge.
-*/
+ * Traces the code to create a new V2 edge.
+ */
 function traceHEdge(HEdge)
 {
 	var vertex = HEdge.getVertex();
